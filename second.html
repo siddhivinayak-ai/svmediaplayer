@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="second.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <title>Video Player</title>
+</head>
+<body>
+  <div id="video-container">
+    <button class="back-button">
+      <i class="ri-arrow-left-line"></i>
+    </button>
+    
+    <video  id="main-video" controls autoplay>
+      <source src="" type="video/mp4" >
+      Your browser does not support the video tag.
+    </video>
+    <div id="video-info">
+      <h2 id="video-title"></h2>
+      <div class="channel-details">
+        <div class="channel-info">
+          <img id="channel-logo" alt="Channel Logo">
+          <p id="channel-name"></p>
+          <p id="subscribers"></p>
+        </div>
+        <div>
+          <button class="sub-btn"  >Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="related-videos-container">
+    <!-- <h3>Recommended</h3> -->
+    <div id="related-videos" class="related-videos"></div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="home.html" class="nav-item">
+      <i class="ri-home-line nav-icon" id="active"></i>
+      <span class="nav-label"></span>
+    </a>
+    <a href="search.html" class="nav-item">
+      <i class="ri-search-line nav-icon"></i>
+      <span class="nav-label"></span>
+    </a>
+    <a href="add.html" class="nav-item">
+      <i class="ri-add-circle-line nav-icon"></i>
+      <span class="nav-label"></span>
+    </a>
+    <a href="notifications.html" class="nav-item">
+      <i class="ri-notification-3-line nav-icon"></i>
+      <span class="nav-label"></span>
+    </a>
+    <a href="profile.html" class="nav-item">
+      <i class="ri-user-line nav-icon"></i>
+      <span class="nav-label"></span>
+    </a>
+  </div>
+  <script src="second.js"></script>
+</body>
+</html>
